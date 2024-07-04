@@ -14,7 +14,11 @@ function createdCard (name, link){
 };
 
 // @todo: Функция удаления карточки
-
+document.querySelector('body').onclick = function(e) {
+  if (e.target.className != 'card__delete-button') return
+  let item = e.target.closest('.card')
+  item.remove()
+}
 
 
 // @todo: Вывести карточки на страницу
