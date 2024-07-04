@@ -4,7 +4,6 @@ const template = document.querySelector("#card-template").content; // Загот
 // @todo: DOM узлы
 
 // @todo: Функция создания карточки
-
 function createdCard (name, link){
  const card = template.cloneNode(true);
 
